@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Austin Repp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">AR</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schooling">Schooling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+<div class="container-fluid text-center" id="about" style="padding-top: 30px;" id="about">    
+  <div class="row content">
+    <div class="col-sm-1 sidenav">
+
+    </div>
+    <div class="col-sm-9 text-left"> 
+      <h1>Austin Repp</h1>
+      <p>I am a Junior/Senior Computer Engineering student at Clemson University. I have experience in professional Software Development from a Co-Op program at Thomson Reuters (Charlotte, NC), and an internship at CareSync (Tampa, FL). I am persuing a software engineering job in a variety of fields. My hobbies outside of the world of tech include basketball, fishing, and motorcycles.</p>
+      <hr>
+    </div>
+    <div class="col-sm-2 sidenav">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid text-center" style="padding-top: 20px;" id="experience">    
+    <div class="row content">
+      <div class="col-sm-1 sidenav">
+  
+      </div>
+      <div class="col-sm-9 text-left"> 
+        <h2>Work Experience</h2>
+        <br>
+        <h4>Thomson Reuters</h4>
+        <p><em>Charlotte, NC. June 2018 - Current</em></p>
+        <ul>
+            <li>Responsible for full stack development and maintenance on an existing client-facing Global Trade product. Technology stack includes ASP.NET, SQL Server, Javascript, HTML, CSS.</li>
+            <li>Converted existing ASP.NET screens to new technology stack using Angular for the front-end, and a RESTful .NET Core Web API.</li>
+            <li>Developed features for an internal automated UI testing framework using Selenium, NUnit, and C#. Additionally, wrote tests using this framework for existing screens.</li>
+        </ul>
+        <br>
+        <h4>CareSync</h4>
+        <p><em>Tampa, FL. June 2017 - Aug 2017</em></p>
+        <ul>
+            <li>Primary researcher on time and motion study research project aimed at identifying and fixing inefficiencies in clinical workflows and reducing latency in the software stack.</li>
+            <li>Learned interface design software Sketch through tutorials and personalized training by the UX Lead. Utilized symbols to create a design library which was reusable by the user experience team.</li>
+            <li>Conducted user interviews with the Clinical Services staff and other employees of CareSync and provided research back to the User Experience team.</li>
+        </ul>
+        <hr>
+      </div>
+      <div class="col-sm-2 sidenav">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center" style="padding-top: 20px;" id="schooling">    
+    <div class="row content">
+      <div class="col-sm-1 sidenav">
+  
+      </div>
+      <div class="col-sm-9 text-left"> 
+        <h2>Education</h2>
+        <br>
+        <h4>Clemson University - Calhoun Honors College</h4>
+        <p><em>BS in Computer Engineering with Minor in Business Administration<br>
+        Aug 2016 - May 2021 (including 1 year of Co-Op rotations)</em></p>
+        <h5>Relevant Coursework:</h5>
+        <ul>
+            <li>Sytems Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Operating Systems</li>
+            <li>Digital Computer Design (VHDL)</li>
+        </ul>
+        <hr>
+      </div>
+      <div class="col-sm-2 sidenav">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid text-center" style="padding-top: 20px;" id="contact">    
+        <div class="row content">
+          <div class="col-sm-1 sidenav">
+      
+          </div>
+          <div class="col-sm-9 text-left"> 
+            <h2>Contact Information</h2>
+            <h6>Email</h6>
+            <p>arepp@g.clemson.edu</p>
+            <h6>LinkedIn</h6>
+            <a href="https://www.linkedin.com/in/austin-repp-887159130/" class="info">Click here</a>
+            <hr>
+          </div>
+          <div class="col-sm-2 sidenav">
+          </div>
+        </div>
+      </div>
+
+<footer class="container-fluid text-center">
+  <p>AR 2019</p>
+</footer>
+
+<script>
+        $(document).ready(function() {
+            $( ".mr-auto .nav-item" ).bind( "click", function(event) {
+                var clickedItem = $( this );
+                $( ".mr-auto .nav-item" ).each( function() {
+                    $( this ).removeClass( "active" );
+                });
+                clickedItem.addClass( "active" );
+            });
+        });
+        </script>
+</body>
+
+</html>
